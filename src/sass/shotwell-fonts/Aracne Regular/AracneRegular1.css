@@ -1,0 +1,12 @@
+/* Webfont: AracneRegular */@font-face {
+    font-family: 'AracneRegular';
+    src: url('AracneRegular1.eot'); /* IE9 Compat Modes */
+    src: url('AracneRegular1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AracneRegular1.woff') format('woff'), /* Modern Browsers */
+         url('AracneRegular1.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AracneRegular1.svg#AracneRegular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

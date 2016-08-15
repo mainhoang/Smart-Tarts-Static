@@ -1,0 +1,12 @@
+/* Webfont: AracneCondensedRegular */@font-face {
+    font-family: 'AracneCondensedRegular';
+    src: url('AracneCondensedRegular1.eot'); /* IE9 Compat Modes */
+    src: url('AracneCondensedRegular1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AracneCondensedRegular1.woff') format('woff'), /* Modern Browsers */
+         url('AracneCondensedRegular1.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AracneCondensedRegular1.svg#AracneCondensedRegular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

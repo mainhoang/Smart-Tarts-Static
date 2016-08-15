@@ -1,0 +1,12 @@
+/* Webfont: AmsiPro-Ultra */@font-face {
+    font-family: 'AmsiProUltra';
+    src: url('AmsiPro-Ultra1.eot'); /* IE9 Compat Modes */
+    src: url('AmsiPro-Ultra1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AmsiPro-Ultra1.woff') format('woff'), /* Modern Browsers */
+         url('AmsiPro-Ultra1.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AmsiPro-Ultra1.svg#AmsiPro-Ultra') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

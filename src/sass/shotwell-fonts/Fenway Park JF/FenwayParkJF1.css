@@ -1,0 +1,12 @@
+/* Webfont: FenwayParkJF */@font-face {
+    font-family: 'FenwayParkJF';
+    src: url('FenwayParkJF1.eot'); /* IE9 Compat Modes */
+    src: url('FenwayParkJF1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FenwayParkJF1.woff') format('woff'), /* Modern Browsers */
+         url('FenwayParkJF1.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('FenwayParkJF1.svg#FenwayParkJF') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

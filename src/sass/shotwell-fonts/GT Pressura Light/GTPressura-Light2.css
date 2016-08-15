@@ -1,0 +1,12 @@
+/* Webfont: GTPressura-Light */@font-face {
+    font-family: 'GTPressuraLight';
+    src: url('GTPressura-Light2.eot'); /* IE9 Compat Modes */
+    src: url('GTPressura-Light2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('GTPressura-Light2.woff') format('woff'), /* Modern Browsers */
+         url('GTPressura-Light2.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('GTPressura-Light2.svg#GTPressura-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

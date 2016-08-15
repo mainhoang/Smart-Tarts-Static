@@ -1,0 +1,12 @@
+/* Webfont: GTPressura-Bold */@font-face {
+    font-family: 'GTPressuraBold';
+    src: url('GTPressura-Bold1.eot'); /* IE9 Compat Modes */
+    src: url('GTPressura-Bold1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('GTPressura-Bold1.woff') format('woff'), /* Modern Browsers */
+         url('GTPressura-Bold1.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('GTPressura-Bold1.svg#GTPressura-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
