@@ -1,15 +1,148 @@
 footer {
   width: 100%;
+  color: white;
+  margin-top: 110px !important;
 
   .footer-top {
     background: #4FAB4F;
 
-    .social {
-      max-width: 800px;
+    .social-content {
+      max-width: 900px;
       margin: 0 auto;
+
+      .social-link {
+        display: inline-block;
+        width: 24.5%;
+        margin: 40px 0;
+
+        &.newsletter {
+
+          .subscribe {
+            font-family: 'GTPressuraLight';
+            border-bottom: 1px solid white;
+
+            button {
+              background: transparent;
+              color: white;
+              border: 0;
+              outline: 0;
+              cursor: pointer;
+              font-family: 'AmsiProUltra';
+              font-size: 15px;
+              text-transform: uppercase;
+            }
+          }
+
+          input[type="text"] {
+            width: 100%;
+            background: transparent;
+            color: #A5D0A4;
+            border: 0;
+            outline: none;
+          }
+        }
+      }
+
+      .social-image {
+        background-image: url('../img/instagram.png');
+        height: 45px;
+        width: 45px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .follow-us-container {
+        display: inline-block;
+        padding-left: 15px;
+
+        .social-header {
+          font-family: 'AmsiProUltra';
+          font-size: 20px;
+          vertical-align: top;
+        }
+
+        .smartco-link {
+          font-family: 'GTPressuraLight';
+        }
+      }
     }
   }
+
   .footer-bottom {
     background: #57B955;
+    padding-top: 40px;
+
+    .about-content {
+      max-width: 900px;
+      margin: 0 auto;
+
+      .left {
+        text-align: left;
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+      }
+
+      .about {
+        width: 400px;
+        display: inline-block;
+
+        h2 {
+          font-family: 'AmsiProUltra';
+          text-transform: uppercase;
+        }
+
+        .about-copy, .copyright {
+          font-family: 'GTPressuraLight';
+        }
+
+        .about-copy {
+          padding: 20px 0;
+          line-height: 1.5em;
+        }
+
+        .copyright {
+          padding: 30px 0;
+        }
+      }
+
+      .right {
+        text-align: right;
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+      }
+
+      .details {
+        display: inline-block;
+
+        li {
+          list-style-type: none;
+        }
+
+        .details-column {
+          display: inline-block;
+          vertical-align: top;
+          text-align: left;
+          padding-left: 15px;
+
+          li {
+            font-family: 'GTPressuraLight';
+            padding-bottom: 1em;
+
+            &.heading {
+              font-family: 'AmsiProUltra';
+            }
+
+            &:not(.heading) {
+              font-size: 14px;
+            }
+          }
+        }
+
+
+      }
+    }
   }
 }
