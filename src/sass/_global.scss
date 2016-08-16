@@ -4,7 +4,7 @@
 // always start with reset @ the top-most ruleset
 // @import '__variables';
 // @import '__mixins';
-// @import '__reset';
+@import '__reset';
 
 .container {
   max-width: 1080px;
