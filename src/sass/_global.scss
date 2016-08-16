@@ -11,3 +11,18 @@
   max-width: 1080px;
   margin: 0 auto;
 }
+
+.instagram {
+  width: 900px;
+  margin: 0 auto;
+
+  .image {
+    display: inline-block;
+    width: 23.7%;
+    padding: 0 3px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
