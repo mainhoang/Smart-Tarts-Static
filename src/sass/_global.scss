@@ -2,7 +2,7 @@
 //************************
 // imports of precompile sass elements are the first import to global
 // always start with reset @ the top-most ruleset
-// @import '__variables';
+@import '__variables';
 // @import '__mixins';
 @import '__reset';
 
@@ -28,13 +28,22 @@
     text-align: center;
     padding-bottom: 30px;
   }
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
+
+  @media (max-width: $mobile) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
   .image {
     display: inline-block;
     width: 23.7%;
     padding: 0 3px;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
 
     img {
       width: 100%;
