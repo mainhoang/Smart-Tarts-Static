@@ -8,151 +8,55 @@
 <body>
   <div class="container">
     <header>
-      <ul>
-        <li class="top-logo">
-          <img src="img/top-logo.png" />
-        </li>
-        <li>Shop</li>
-        <li>Ingredients</li>
-        <li>About Us</li>
-        <li>Working With Us</li>
-        <li class="store-locator">Store Locator</li>
-      </ul>
+      {% include 'header' %}
     </header>
 
     <div class="hero-image">
-    <img src="img/ingredients-hero.png" />
+      <img src="img/ingredients-hero.png" />
     </div>
 
-    <section>
+    <section class="mission">
       <div class="mission-header">
         <h2>OUR MISSION IS TO REVOLUTIONIZE SNACK FOOD BY USING SMARTER INGREDIENTS</h2>
       </div>
 
       <div class="mission-logo">
-        <img src="img/living-better.png" />
+        <div class="image">
+          <img src="img/living-better.png" />
+        </div>
+
         <div class="logo-text">
           With that in mind, we wanted a <span id="better-green">better</span> toaster pastry for our families, friends, teammates and athletes - a functional food that's healthy and fun-filled.
         </div>
       </div>
 
       <div class="mission-copy">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et est enim. Fusce id hendrerit est, ut fringilla justo. Ut vel aliquam felis. In eu finibus augue. Nunc et mollis massa. Maecenas molestie diam et risus maximus vehicula. Aliquam vulputate mi tellus, et porttitor magna commodo a. Praesent interdum metus libero, nec faucibus nibh eleifend nec. Fusce tortor nisi, pharetra ut t empor ut, rhoncus non elit. Vestibulum mattis nulla at risus lobortis condimentum. Nam dui enim, tempor a sapien sed, porttitor dapibus nisi.</p>
+        <div class="paragraph">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et est enim. Fusce id hendrerit est, ut fringilla justo. Ut vel aliquam felis. In eu finibus augue. Nunc et mollis massa. Maecenas molestie diam et risus maximus vehicula. Aliquam vulputate mi tellus, et porttitor magna commodo a. Praesent interdum metus libero, nec faucibus nibh eleifend nec. Fusce tortor nisi, pharetra ut t empor ut, rhoncus non elit. Vestibulum mattis nulla at risus lobortis condimentum. Nam dui enim, tempor a sapien sed, porttitor dapibus nisi.</p>
+        </div>
 
-        <p>Cras suscipit, ipsum sed aliquam pellentesque, felis nisi facilisis lacus, malesuada hendrerit velit elit ac sapien. Cras sed mauris mi. Phasellus metus lacus, malesuada in erat vitae, viverra gravida lectus. Donec et egestas tortor. Ut ac eleifend lectus. Etiam ac dapibus est. Donec ornare nulla magna, nec condimentum lacus imperdiet pharetra. Etiam massa dui, tempor et dapibus in, pulvinar eget libero.</p>
+        <div class="paragraph">
+          <p>Cras suscipit, ipsum sed aliquam pellentesque, felis nisi facilisis lacus, malesuada hendrerit velit elit ac sapien. Cras sed mauris mi. Phasellus metus lacus, malesuada in erat vitae, viverra gravida lectus. Donec et egestas tortor. Ut ac eleifend lectus. Etiam ac dapibus est. Donec ornare nulla magna, nec condimentum lacus imperdiet pharetra. Etiam massa dui, tempor et dapibus in, pulvinar eget libero.</p>
+        </div>
 
-        <p>Fusce semper elementum ante, eget vestibulum lectus varius in. Ut et arcu varius, auctor felis quis, bibendum sem. Fusce hendrerit maximus velit quis volutpat. Nunc sit amet dui eu justo sollicitudin viverra et et orci. Donec egestas tellus vel nisl pulvinar pulvinar. Phasellus posuere ornare placerat. Mauris in odio nec odio dictum volutpat eget id ipsum.</p>
+        <div class="paragraph">
+          <p>Fusce semper elementum ante, eget vestibulum lectus varius in. Ut et arcu varius, auctor felis quis, bibendum sem. Fusce hendrerit maximus velit quis volutpat. Nunc sit amet dui eu justo sollicitudin viverra et et orci. Donec egestas tellus vel nisl pulvinar pulvinar. Phasellus posuere ornare placerat. Mauris in odio nec odio dictum volutpat eget id ipsum.</p>
+        </div>
 
-        <p>Mauris vulputate arcu vitae eros vestibulum maximus ac id dui. Nullam finibus et purus a hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris nunc arcu, condimentum vel mollis id, luctus non nisl. Phasellus nibh quam, commodo quis convallis et, suscipit eu magna. Vestibulum metus ligula, vulputate ac tincidunt non, mattis eu mi. Donec mollis dictum hendrerit. Quisque vestibulum finibus porttitor. Phasellus bibendum posuere felis, id rhoncus est rhoncus vel. Donec id nulla molestie, auctor quam a, maximus dui. Vivamus ut leo blandit, egestas lorem iaculis, dictum diam.</p>
+        <div class="paragraph">
+          <p>Mauris vulputate arcu vitae eros vestibulum maximus ac id dui. Nullam finibus et purus a hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris nunc arcu, condimentum vel mollis id, luctus non nisl. Phasellus nibh quam, commodo quis convallis et, suscipit eu magna. Vestibulum metus ligula, vulputate ac tincidunt non, mattis eu mi. Donec mollis dictum hendrerit. Quisque vestibulum finibus porttitor. Phasellus bibendum posuere felis, id rhoncus est rhoncus vel. Donec id nulla molestie, auctor quam a, maximus dui. Vivamus ut leo blandit, egestas lorem iaculis, dictum diam.</p>
+        </div>
       </div>
 
     </section>
 
     <section>
-      <div class="instagram">
-        <div class="hashtag">
-          #eatsmart
-        </div>
-        <div class="image">
-          <img src="img/image1.png" />
-        </div>
-        <div class="image">
-          <img src="img/image2.png" />
-        </div>
-        <div class="image">
-          <img src="img/image3.png" />
-        </div>
-        <div class="image">
-          <img src="img/image4.png" />
-        </div>
-      </div>
+      {% include 'instagram' %}
     </section>
   </div>
 
   <footer>
-    <div class="footer-top">
-      <div class="social-content">
-        <div class="social-link">
-          <div class="social-image"></div>
-          <div class="follow-us-container">
-            <span class="social-header">FOLLOW US</span><br>
-            <span class="smartco-link">@smartco</span>
-          </div>
-        </div>
-
-        <div class="social-link">
-          <div class="social-image"></div>
-          <div class="follow-us-container">
-            <span class="social-header">LIKE OUR PAGE</span><br>
-            <span class="smartco-link">@smartco</span>
-          </div>
-        </div>
-
-        <div class="social-link">
-          <div class="social-image"></div>
-          <div class="follow-us-container">
-            <span class="social-header">FOLLOW US</span><br>
-            <span class="smartco-link">@smartco</span>
-          </div>
-        </div>
-
-        <div class="social-link newsletter">
-          <div class="subscribe">
-            Join our Newsletter
-            <button>Subscribe</button>
-          </div>
-
-          <div class="email-input">
-            <input type="text" placeholder="Enter email for 10% off first purchase">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="about-content">
-        <div class="left">
-          <div class="about">
-            <h2>About smart co</h2>
-            <div class="about-copy">
-              Smart Co. is a better-for-you snack and foods company that is on a mission to take out the artificially flavored, sugar filled, and nutrient lacking snack foods you love and replace with products reinvigorated through smart ingredients that are good for you.
-            </div>
-
-            <div class="copyright">
-              Copyright &copy; 2016 The Smart Co.
-            </div>
-          </div>
-        </div>
-
-        <div class="right">
-          <div class="details">
-            <div class="details-column">
-              <ul>
-                <li class="heading">Contact</li>
-                <li>508-627-1270</li>
-                <li><a href="mailto:info@smartco.com"></a></li>
-              </ul>
-            </div>
-
-            <div class="details-column">
-              <ul>
-                <li class="heading">The Smart Co.</li>
-                <li>FAQs</li>
-                <li>Our Community Blog</li>
-                <li>NB Ambassadors</li>
-              </ul>
-            </div>
-
-            <div class="details-column">
-              <ul>
-                <li class="heading">Legal</li>
-                <li>Privacy Policy</li>
-                <li>Terms of Use</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include 'footer' %}
   </footer>
 
   <script src="js/main.js"></script>

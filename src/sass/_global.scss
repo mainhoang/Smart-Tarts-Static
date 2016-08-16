@@ -10,9 +10,24 @@
   padding-top: 15px;
   max-width: 1080px;
   margin: 0 auto;
+
+  .hero-image {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .instagram {
+  .hashtag {
+    font-family: 'GTPressuraBold';
+    text-align: center;
+    padding-bottom: 30px;
+  }
   width: 900px;
   margin: 0 auto;
 

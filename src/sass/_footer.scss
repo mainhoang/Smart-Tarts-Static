@@ -35,10 +35,24 @@ footer {
 
           input[type="text"] {
             width: 100%;
-            background: transparent;
-            color: #A5D0A4;
+            background: #4FAB4F;
             border: 0;
+            color: #fff;
             outline: none;
+            opacity: .4;
+
+            &::-webkit-input-placeholder {
+              color: #fff;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+              color: #fff;
+            }
+            &::-moz-placeholder {  /* Firefox 19+ */
+              color: #fff;
+            }
+            &:-ms-input-placeholder {
+              color: #fff;
+            }
           }
         }
       }
@@ -140,9 +154,8 @@ footer {
             }
           }
         }
-
-
       }
     }
   }
 }
+
