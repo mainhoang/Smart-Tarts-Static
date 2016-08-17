@@ -4,9 +4,26 @@ header {
     padding: 0;
   }
 
+  ul {
+    width: 100%;
+    text-align: center;
+  }
+
   li {
     font-family: 'AmsiProUltra';
     text-transform: uppercase;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    &.top-logo {
+      float: left;
+      padding: 0;
+    }
+
+    &.store-locator {
+      float: right;
+      padding: 0;
+    }
   }
 
   a {
