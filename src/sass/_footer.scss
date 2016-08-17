@@ -10,15 +10,24 @@ footer {
       max-width: 900px;
       margin: 0 auto;
 
+      @media (max-width: 912px) {
+        text-align: center;
+      }
+
       @media (max-width: $mobile) {
         padding-left: 5%;
         padding-right: 5%;
+        text-align: left;
       }
 
       .social-link {
         display: inline-block;
         width: 24.5%;
         margin: 40px 0;
+
+        @media (max-width: 912px) {
+          width: 32.9%;
+        }
 
         @media (max-width: $mobile) {
           display: block;
@@ -32,6 +41,12 @@ footer {
           .subscribe {
             font-family: 'GTPressuraLight';
             border-bottom: 1px solid white;
+
+            @media (max-width: 912px) {
+              text-align: center;
+              padding-left: 5%;
+              padding-right: 5%;
+            }
 
             button {
               background: transparent;
@@ -76,6 +91,11 @@ footer {
         display: inline-block;
         background-size: contain;
         background-repeat: no-repeat;
+
+        @media (max-width: $mobile) {
+          height: 45px;
+          width: 45px;
+        }
       }
 
       .follow-us-container {
@@ -86,6 +106,10 @@ footer {
           font-family: 'AmsiProUltra';
           font-size: 20px;
           vertical-align: top;
+
+          @media (max-width: $mobile) {
+            font-size: 20px;
+          }
         }
 
         .smartco-link {
@@ -116,6 +140,7 @@ footer {
 
         @media (max-width: $mobile) {
           width: 100%;
+          text-align: center;
         }
       }
 
