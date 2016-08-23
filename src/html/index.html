@@ -6,54 +6,55 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      {% include 'header' %}
-    </header>
+<div class="home">
+  <header>
+    {% include 'header' %}
+  </header>
 
-    <div class="hero-image">
-      <img src="img/hero.png" />
+    <div class="content-container">
+
+      <section>
+        <div class="mission-statement">
+          <h2>SMART TART</h2>
+          <p>Smart Co. is better-for-you snack and foods company that is on a mission to take out the artificially flavored, sugar filled, and nutrient lacking snack foods you love and replace with products reinvigorated through smart ingredients that are good for you.</p>
+        </div>
+      </section>
+
+      <section>
+        <ul class="products">
+          <li class="product">
+          </li>
+          <li class="product">
+          </li>
+          <li class="product">
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="ingredients">
+          <ul>
+            <li><span class="ingredients-top">All Natural</span><br>Ingredients</li>
+            <li><span class="ingredients-top">Non Gmo</span><br>Ingredients</li>
+            <li><span class="ingredients-top">10g</span><br>Protein</li>
+            <li><span class="ingredients-top">0g</span><br>Trans Fat</li>
+            <li><span class="ingredients-top">150mg</span><br>Potassium</li>
+            <li><span class="ingredients-top">B-6, B12</span><br>Vitamins</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        {% include 'instagram' %}
+      </section>
+
     </div>
 
-    <section>
-      <div class="text">
-        <h2>SMART TART</h2>
-        <p>Smart Co. is better-for-you snack and foods company that is on a mission to take out the artificially flavored, sugar filled, and nutrient lacking snack foods you love and replace with products reinvigorated through smart ingredients that are good for you.</p>
-      </div>
+    <footer>
+      {% include 'footer' %}
+    </footer>
 
-      <div class="products">
-        <div class="product">
-          <img src="img/product1.png" />
-        </div>
-        <div class="product">
-          <img src="img/product2.png" />
-        </div>
-        <div class="product">
-          <img src="img/product3.png" />
-        </div>
-      </div>
-
-      <div class="ingredients">
-        <ul>
-          <li><span class="ingredients-top">All Natural</span><br>Ingredients</li>
-          <li><span class="ingredients-top">Non Gmo</span><br>Ingredients</li>
-          <li><span class="ingredients-top">10g</span><br>Protein</li>
-          <li><span class="ingredients-top">0g</span><br>Trans Fat</li>
-          <li><span class="ingredients-top">150mg</span><br>Potassium</li>
-          <li><span class="ingredients-top">B-6, B12</span><br>Vitamins</li>
-        </ul>
-      </div>
-
-    </section>
-
-    <section>
-      {% include 'instagram' %}
-    </section>
   </div>
-
-  <footer>
-    {% include 'footer' %}
-  </footer>
 
   <script src="js/main.js"></script>
 </body>

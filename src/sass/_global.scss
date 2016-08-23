@@ -6,22 +6,31 @@
 @import '__mixins';
 @import '__reset';
 
-.container {
-  padding-top: 15px;
-  max-width: 1080px;
-  margin: 0 auto;
-  position: relative;
-
-  .hero-image {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding-bottom: 80px;
-
-    img {
-      width: 100%;
-    }
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+p{
+  font-family: 'GTPressuraLight';
+  font-size: 12px;
+  line-height: 2;
+}
+
+:not(header) {
+  position:relative;
+}
+
+.content-container {
+  width: 100%;
+}
+
+section {
+  padding: 75px 0px 0px 0px;
+  margin: 0px auto;
+}
+
+
 
 .instagram {
   .hashtag {

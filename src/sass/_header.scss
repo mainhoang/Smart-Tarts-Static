@@ -1,52 +1,94 @@
 header {
-  ul, li {
-    display: inline-block;
-    padding: 0;
-  }
-
-  ul {
+  width: 100%;
+  height: 586px;
+  background-color: white;
+  nav {
+    z-index: 1000;
+    position:fixed;
     width: 100%;
-    text-align: center;
-  }
-
-  li {
-    font-family: 'AmsiProUltra';
-    text-transform: uppercase;
-    padding-right: 15px;
-    padding-left: 15px;
-
-    &.top-logo {
+    padding: 0 4% 0 4%;
+    height: 66px;
+    background-color: white;
+    .top-logo {
+      width: 55px;
+      height: 55px;
       float: left;
-      padding: 0;
-    }
-
-    &.store-locator {
-      float: right;
-      padding: 0;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: #000;
-  }
-
-  .top-links {
-    font-family: 'AmsiProUltra';
-    position: absolute;
-    top: 10px;
-    right: 0;
-    font-size: 12px;
-    a {
-      color: black;
-      opacity: .4;
-      padding-right: 10px;
-      padding-left: 10px;
-      transition: all 250ms;
-
-      &:hover {
-        opacity: 1;
+      margin-top: 7px;
+      .st0 {
+        fill:#5FA945;
+      }
+      .st1 {
+        fill:#FFFFFF;
       }
     }
+
+    ul {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+    li {
+      display: inline-block;
+      font-family: 'AmsiProUltra';
+      &.store-locator {
+        float: right;
+        padding: 0;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    .top-links {
+      position: absolute;
+      width: 300px;
+      height: 12px;
+      top: 7px;
+      right: 0px;
+      font-size: 8px;
+      float: right;
+      a {
+        color: black;
+        opacity: .4;
+        transition: all 250ms;
+        &:hover {
+          opacity: 1  ;
+        }
+      }
+      li.right-border {
+        padding: 2px 6px 0 6px;
+
+
+        border-right: 2px solid #a4a4a4;
+      }
+      li:nth-child(3) {
+        margin-left: 3px;
+      }
+      svg {
+        vertical-align: middle;
+        padding-bottom: 2px;
+        margin: 0;
+      }
+
+    }
+    ul.bottom-links {
+      position: relative;
+      font-size: 12px;
+      bottom: 15px;
+      li {
+      padding-right: 15px;
+      padding-left: 15px;
+      }
+    }
+  }
+  div.hero-area {
+    position: relative;
+    width: 92%;
+    height: 520px;
+    top: 66px;
+    left: 4%;
+    background-image: url("../img/hero.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
