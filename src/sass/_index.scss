@@ -30,9 +30,14 @@ ul.products {
     width: 26%;
     height: 150px;
     background-size: 100%;
+    background-repeat: no-repeat;
     margin: 0px 28px 0px 28px;
     @media (max-width: $mobile) {
-    width: 100%;
+    position:relative;
+    left: 10%;
+    width: 80%;
+    height: 300px;
+    margin: auto;
     }
   }
   li:nth-child(1) {
