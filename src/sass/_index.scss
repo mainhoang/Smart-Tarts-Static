@@ -52,23 +52,19 @@ ul.products {
 }
 
 .ingredients {
-  padding-bottom: 100px;
-
   .ingredients-top {
     font-family: 'GTPressuraBold';
-    font-size: 22px;
+    font-size: 12px;
   }
-
   ul {
     padding: 0;
     text-align: center;
   }
-
   li {
     display: inline-block;
     font-family: 'GTPressuraLight';
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 8px;
+    padding: 0px 15px;
 
     @media (max-width: $mobile) {
       padding-bottom: 15px;
