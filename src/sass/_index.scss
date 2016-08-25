@@ -1,4 +1,4 @@
-.mission-statement {
+article.mission-statement {
   width: 450px;
   max-width: 100%;
   margin: 0 auto;
@@ -6,11 +6,9 @@
     padding-left: 5%;
     padding-right: 5%;
   }
-  h2 {
-    font-family: 'AmsiProUltra';
+  h3 {
     text-align: center;
-    font-size: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
   p {
     text-align: center;
@@ -18,6 +16,7 @@
 }
 
 ul.products {
+  padding-top: 44px;
   width: 800px;
   max-width: 100%;
   margin: 0 auto;
@@ -25,10 +24,10 @@ ul.products {
     padding-left: 5%;
     padding-right: 5%;
   }
-  li.product {
+  li {
     display: inline-block;
     width: 26%;
-    height: 150px;
+    height: 160px;
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 0px 28px 0px 28px;
@@ -51,24 +50,68 @@ ul.products {
   }
 }
 
-.ingredients {
-  .ingredients-top {
-    font-family: 'GTPressuraBold';
-    font-size: 12px;
-  }
-  ul {
-    padding: 0;
-    text-align: center;
-  }
+ul.product-stats {
+  padding-top: 22px;
+  text-align: center;
   li {
     display: inline-block;
-    font-family: 'GTPressuraLight';
-    font-size: 8px;
-    padding: 0px 15px;
-
+    padding: 0px 12px;
+    p:first-child {
+      font-family: 'GTPressuraBold';
+      font-size: 1.4rem;
+    }
+    p:last-child {
+      font-family: 'GTPressuraLight';
+      font-size: 0.8rem;
+      line-height: 0;
+    }
     @media (max-width: $mobile) {
       padding-bottom: 15px;
       display: block;
+    }
+  }
+}
+
+section.instagram {
+  article {
+    width: 750px;
+    max-width: 100%;
+    margin: 26px auto 0px auto;
+    h5 {
+      font-family: 'GTPressuraBold';
+      text-align: center;
+    }
+    @media (max-width: $mobile) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    ul {
+      text-align: center;
+      li {
+        display: inline-block;
+        width: 23%;
+        height: 178px;
+        margin: 0px 4px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:nth-child(1) {
+          background-image: url(../img/image1.png);
+        }
+        &:nth-child(2) {
+          background-image: url(../img/image2.png);
+        }
+        &:nth-child(3) {
+          background-image: url(../img/image3.png);
+        }
+        &:nth-child(4) {
+          background-image: url(../img/image4.png);
+        }
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
+      }
     }
   }
 }

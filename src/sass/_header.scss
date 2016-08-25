@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  height: 586px;
+  height: 49vw;
   background-color: white;
   nav {
     z-index: 1000;
@@ -14,10 +14,10 @@ header {
       height: 55px;
       float: left;
       margin-top: 7px;
-      .st0 {
+      .logo-st0 {
         fill:#5FA945;
       }
-      .st1 {
+      .logo-st1 {
         fill:#FFFFFF;
       }
     }
@@ -49,7 +49,7 @@ header {
       float: right;
       .right-border {
         padding: 2px 6px 0 6px;
-        border-right: 2px solid #a4a4a4;
+        // border-right: 2px solid #a4a4a4;
       }
       li:nth-child(3) {
         margin-left: 7px;
@@ -87,21 +87,57 @@ header {
       font-size: 12px;
       li {
         padding: 0px 4px 0px 4px;
-      }
-      li:nth-child(2) {
-        vertical-align: middle;
-        padding-bottom: 4px;
+        &:nth-child(2) {
+          vertical-align: middle;
+          padding-bottom: 4px;
+        }
       }
     }
   }
   div.hero-area {
     position: relative;
     width: 92%;
-    height: 520px;
-    top: 66px;
+    height: 49vw;
     left: 4%;
-    background-image: url("../img/hero.png");
+    background-image: url("../img/hero-home.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    hgroup {
+      text-align: center;
+      color: white;
+      padding: 21.5vw 5vw;
+      h5 {
+        font-family: "GTPressuraBold";
+        padding-bottom: 24px;
+        letter-spacing: 0.5px;
+      }
+      a {
+        color: white;
+        font-size: 1.4rem;
+        padding: 12px 20px 7px 20px;
+        width: 154px;
+        margin: auto;
+        background-color: $logo-green;
+        border: 2px solid white;
+      }
+    }
   }
 }
+/*@media only screen and (max-width: 1175px) {
+  header {
+    height: 570px;
+  }
+  div.hero-area {
+    height: 505px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  header {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header {
+    height: 300px;
+  }
+}*/

@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="UTF-8">
   <title>Gulper</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<div class="home">
-  <header>
-    {% include 'header' %}
-  </header>
+  <body>
+    <main class="home">
 
-    <div class="content-container">
+      <header>
+        {% include 'header' %}
+      </header>
 
-      <section>
-        <div class="mission-statement">
-          <h2>SMART TART&trade;</h2>
-          <p>Smart Co. is better-for-you snack and foods company that is on a mission to take out the artificially flavored, sugar filled, and nutrient lacking snack foods you love and replace with products reinvigorated through smart ingredients that are good for you.</p>
-        </div>
-      </section>
-
-      <section>
-        <ul class="products">
-          <li class="product">
-          </li>
-          <li class="product">
-          </li>
-          <li class="product">
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <div class="ingredients">
-          <ul>
-            <li><span class="ingredients-top">All Natural</span><br>Ingredients</li>
-            <li><span class="ingredients-top">Non Gmo</span><br>Ingredients</li>
-            <li><span class="ingredients-top">10g</span><br>Protein</li>
-            <li><span class="ingredients-top">0g</span><br>Trans Fat</li>
-            <li><span class="ingredients-top">150mg</span><br>Potassium</li>
-            <li><span class="ingredients-top">B-6, B12</span><br>Vitamins</li>
+      <div class="content-container">
+        <section>
+          <article class="mission-statement">
+            <h3>SMART TART&trade;</h3>
+            <p>Smart Co. is better-for-you snack and foods company that is on a mission to take out the artificially flavored,   sugar filled, and nutrient lacking snack foods you love and replace with products reinvigorated through smart   ingredients that are good for you.</p>
+          </article>
+          <ul class="products">
+            <li></li>
+            <li></li>
+            <li></li>
           </ul>
-        </div>
-      </section>
+          <ul class="product-stats">
+            <li>
+              <p>All Natural</p>
+              <p>Ingredients</p>
+            <li>
+              <p>Non Gmo</p>
+              <p>Ingredients</p>
+            </li>
+            <li>
+              <p>10g</p>
+              <p>Protein</p>
+            </li>
+            <li>
+              <p>0g</p>
+              <p>Trans Fat</p>
+            </li>
+            <li>
+              <p>150mg</p>
+              <p>Potassium</p>
+            </li>
+            <li>
+              <p>B-6, B12</p>
+              <p>Vitamins</p>
+            </li>
+          </ul>
+        </section>
+        <section class="instagram">
+          {% include 'instagram' %}
+        </section>
+      </div>
 
-      <section>
-        {% include 'instagram' %}
-      </section>
+      <footer>
+          {% include 'footer' %}
+        </footer>
 
-    </div>
-
-    <footer>
-      {% include 'footer' %}
-    </footer>
-
-  </div>
-
-  <script src="js/main.js"></script>
-</body>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
 </html>
