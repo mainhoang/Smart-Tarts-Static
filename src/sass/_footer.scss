@@ -1,8 +1,14 @@
 footer {
+  background: $footerLightGreen;
   width: 100%;
   color: white;
   margin-top: 70px !important;
-
+  h5, h6 {
+    text-transform: uppercase;
+  }
+  a {
+    color: white;
+  }
   article.footer-top {
     background: $footerDarkGreen;
     ul {
@@ -16,12 +22,10 @@ footer {
         padding-right: 5%;
         text-align: left;
       }
-
       li {
         display: inline-block;
         width: 24.2%;
         margin: 20px 0;
-
         @media (max-width: 912px) {
           width: 32.9%;
         }
@@ -32,7 +36,6 @@ footer {
           padding: 20px 0;
         }
         h5 {
-          text-transform: uppercase;
           padding-top: 2px;
           @media (max-width: $mobile) {
             font-size: 2rem;
@@ -46,19 +49,15 @@ footer {
         p {
           text-decoration: underline;
         }
-
         &.newsletter {
-
           .subscribe {
             font-family: 'GTPressuraLight';
             border-bottom: 1px solid white;
-
             @media (max-width: 912px) {
               text-align: center;
               padding-left: 5%;
               padding-right: 5%;
             }
-
             button {
               background: transparent;
               color: white;
@@ -71,7 +70,6 @@ footer {
               margin-left: 32px;
             }
           }
-
           input[type="text"] {
             width: 100%;
             background: #4FAB4F;
@@ -80,7 +78,6 @@ footer {
             color: #fff;
             outline: none;
             opacity: .4;
-
             &::-webkit-input-placeholder {
               color: #fff;
             }
@@ -99,111 +96,69 @@ footer {
     }
   }
 
-  .footer-bottom {
-    //background: $footerLightGreen;
-    padding-top: 24px;
+  article.footer-bottom {
+    padding-top: 26px;
     max-width: 730px;
     margin: 0 auto;
-
-    .about-content {
-
-
+    aside.bottom-left {
+      text-align: left;
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+      max-width: 250px;
+      p {
+        padding: 8px 0;
+        font-size: 1rem;
+        line-height: 1.2;
+      }
+      p:last-child {
+        padding: 8px 0;
+        font-size: 0.8rem;
+        @media (max-width: $mobile) {
+          text-align: center;
+        }
+      }
+      h6 {
+        font-family: 'AmsiProUltra';
+        text-transform: uppercase;
+        @media (max-width: $mobile) {
+          text-align: center;
+        }
+      }
       @media (max-width: $mobile) {
         padding-left: 5%;
         padding-right: 5%;
       }
+    }
 
-      .left {
-        text-align: left;
+    ul.bottom-right {
+      text-align: right;
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+      float: right;
+      li {
         display: inline-block;
-        width: 49%;
         vertical-align: top;
-
+        text-align: left;
+        padding-left: 15px;
+        list-style-type: none;
+        h6 {
+          padding-bottom: 4px;
+        }
+        a {
+          font-family: 'GTPressuraLight';
+          font-size: 0.8rem;
+        }
         @media (max-width: $mobile) {
           width: 100%;
           text-align: center;
+          padding: 0;
         }
       }
-
-      .about {
-        max-width: 250px;
-        display: inline-block;
-
-        h2 {
-          font-family: 'AmsiProUltra';
-          text-transform: uppercase;
-
-          @media (max-width: $mobile) {
-            text-align: center;
-          }
-        }
-
-        .about-copy, .copyright {
-          font-family: 'GTPressuraLight';
-        }
-
-        .about-copy {
-          padding: 8px 0;
-          line-height: 1.2;
-        }
-
-        .copyright {
-          padding: 10px 0;
-          font-size: 0.5rem;
-
-          @media (max-width: $mobile) {
-            text-align: center;
-          }
-        }
-      }
-
-      .right {
-        text-align: right;
-        display: inline-block;
-        width: 49%;
-        vertical-align: top;
-
-        @media (max-width: $mobile) {
-          width: 100%;
-        }
-      }
-
-      .details {
-        display: inline-block;
-
-        @media (max-width: $mobile) {
-            display: block;
-          }
-
-        li {
-          list-style-type: none;
-        }
-
-        .details-column {
-          display: inline-block;
-          vertical-align: top;
-          text-align: left;
-          padding-left: 15px;
-
-          @media (max-width: $mobile) {
-            width: 100%;
-            text-align: center;
-            padding: 0;
-          }
-
-          li {
-            font-family: 'GTPressuraLight';
-            padding-bottom: 1em;
-
-            &.heading {
-              font-family: 'AmsiProUltra';
-            }
-
-            &:not(.heading) {
-              font-size: 14px;
-            }
-          }
-        }
+      @media (max-width: $mobile) {
+        width: 100%;
+        display: block;
       }
     }
   }
