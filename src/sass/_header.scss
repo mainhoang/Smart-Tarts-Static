@@ -45,8 +45,8 @@ header {
         display: none;
       }
       li {
-      padding-right: 12px;
-      padding-left: 12px;
+      padding-right: 9px;
+      padding-left: 9px;
       }
       img {
         width: 6px;
@@ -154,7 +154,7 @@ header {
       }
       a, div {
         color: black;
-        opacity: .6;
+        opacity: .4;
         transition: all 250ms;
         &:hover {
           opacity: 1  ;
