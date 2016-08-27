@@ -1,11 +1,25 @@
 main.story {
   header {
     height: 20.5vw;
+    @media (max-width: 912px) {
+      height: 446px;
+    }
     div.hero-area {
       height: 20.5vw;
       background-image: url("../img/full-story.png");
+      background-size: cover;
+      @media (max-width: 912px) {
+        height: 446px;
+        background-position: top left;
+        background-size: cover;
+      }
       hgroup {
         padding: 11vw 5vw;
+        @media (max-width: 912px) {
+          width: 70%;
+          left: 15%;
+          padding: 220px 5%;
+        }
         h1 {
           display: none;
         }
@@ -20,6 +34,7 @@ main.story {
         }
         h2.story-heading {
           display: block;
+          font-size: 7rem;
         }
       }
     }
@@ -79,6 +94,11 @@ main.story, main.ingredients {
         height: 140px;
         @media (max-width: $mobile) {
           width: 100%;
+
+          height:200px;
+          background-position: center;
+          background-size: 70%;
+          margin: 0 auto;
         }
       }
       p.logo-text {
@@ -97,8 +117,9 @@ main.story, main.ingredients {
         @media (max-width: $mobile) {
           position: static;
           transform: none;
-          padding: 20px 0;
+          padding: 20px 40px;
           width: 100%;
+          text-align: center;
         }
 
         #better-green {
