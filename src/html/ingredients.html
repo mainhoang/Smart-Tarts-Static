@@ -6,58 +6,40 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="container">
+  <main class="ingredients">
     <header>
       {% include 'header' %}
     </header>
+    <div class="content-container">
+      <section class="about">
+        <h3>OUR MISSION IS TO REVOLUTIONIZE SNACK FOOD BY USING SMARTER INGREDIENTS</h3>
 
-    <div class="hero-image">
-      <img src="img/ingredients-hero.png" />
+        <aside>
+          <div class="image">
+          </div>
+          <p class="logo-text">
+            With that in mind, we wanted a <span id="better-green">better</span> toaster pastry for our families, friends, teammates and athletes - a functional food that's healthy and fun-filled.
+          </p>
+        </aside>
+
+        <article class="about-copy">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et est enim. Fusce id hendrerit est, ut fringilla justo. Ut vel aliquam felis. In eu finibus augue. Nunc et mollis massa. Maecenas molestie diam et risus maximus vehicula. Aliquam vulputate mi tellus, et porttitor magna commodo a. Praesent interdum metus libero, nec faucibus nibh eleifend nec. Fusce tortor nisi, pharetra ut t empor ut, rhoncus non elit. Vestibulum mattis nulla at risus lobortis condimentum. Nam dui enim, tempor a sapien sed, porttitor dapibus nisi.</p>
+          <p>Cras suscipit, ipsum sed aliquam pellentesque, felis nisi facilisis lacus, malesuada hendrerit velit elit ac sapien. Cras sed mauris mi. Phasellus metus lacus, malesuada in erat vitae, viverra gravida lectus. Donec et egestas tortor. Ut ac eleifend lectus. Etiam ac dapibus est. Donec ornare nulla magna, nec condimentum lacus imperdiet pharetra. Etiam massa dui, tempor et dapibus in, pulvinar eget libero.</p>
+          <p>Fusce semper elementum ante, eget vestibulum lectus varius in. Ut et arcu varius, auctor felis quis, bibendum sem. Fusce hendrerit maximus velit quis volutpat. Nunc sit amet dui eu justo sollicitudin viverra et et orci. Donec egestas tellus vel nisl pulvinar pulvinar. Phasellus posuere ornare placerat. Mauris in odio nec odio dictum volutpat eget id ipsum.</p>
+          <p>Mauris vulputate arcu vitae eros vestibulum maximus ac id dui. Nullam finibus et purus a hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris nunc arcu, condimentum vel mollis id, luctus non nisl. Phasellus nibh quam, commodo quis convallis et, suscipit eu magna. Vestibulum metus ligula, vulputate ac tincidunt non, mattis eu mi. Donec mollis dictum hendrerit. Quisque vestibulum finibus porttitor. Phasellus bibendum posuere felis, id rhoncus est rhoncus vel. Donec id nulla molestie, auctor quam a, maximus dui. Vivamus ut leo blandit, egestas lorem iaculis, dictum diam.</p>
+        </article>
+
+      </section>
+
+      <section class="instagram">
+        {% include 'instagram' %}
+      </section>
     </div>
 
-    <section class="mission">
-      <div class="mission-header">
-        <h2>OUR MISSION IS TO REVOLUTIONIZE SNACK FOOD BY USING SMARTER INGREDIENTS</h2>
-      </div>
-
-      <div class="mission-logo">
-        <div class="image">
-          <img src="img/living-better.png" />
-        </div>
-
-        <div class="logo-text">
-          With that in mind, we wanted a <span id="better-green">better</span> toaster pastry for our families, friends, teammates and athletes - a functional food that's healthy and fun-filled.
-        </div>
-      </div>
-
-      <div class="mission-copy">
-        <div class="paragraph">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et est enim. Fusce id hendrerit est, ut fringilla justo. Ut vel aliquam felis. In eu finibus augue. Nunc et mollis massa. Maecenas molestie diam et risus maximus vehicula. Aliquam vulputate mi tellus, et porttitor magna commodo a. Praesent interdum metus libero, nec faucibus nibh eleifend nec. Fusce tortor nisi, pharetra ut t empor ut, rhoncus non elit. Vestibulum mattis nulla at risus lobortis condimentum. Nam dui enim, tempor a sapien sed, porttitor dapibus nisi.</p>
-        </div>
-
-        <div class="paragraph">
-          <p>Cras suscipit, ipsum sed aliquam pellentesque, felis nisi facilisis lacus, malesuada hendrerit velit elit ac sapien. Cras sed mauris mi. Phasellus metus lacus, malesuada in erat vitae, viverra gravida lectus. Donec et egestas tortor. Ut ac eleifend lectus. Etiam ac dapibus est. Donec ornare nulla magna, nec condimentum lacus imperdiet pharetra. Etiam massa dui, tempor et dapibus in, pulvinar eget libero.</p>
-        </div>
-
-        <div class="paragraph">
-          <p>Fusce semper elementum ante, eget vestibulum lectus varius in. Ut et arcu varius, auctor felis quis, bibendum sem. Fusce hendrerit maximus velit quis volutpat. Nunc sit amet dui eu justo sollicitudin viverra et et orci. Donec egestas tellus vel nisl pulvinar pulvinar. Phasellus posuere ornare placerat. Mauris in odio nec odio dictum volutpat eget id ipsum.</p>
-        </div>
-
-        <div class="paragraph">
-          <p>Mauris vulputate arcu vitae eros vestibulum maximus ac id dui. Nullam finibus et purus a hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris nunc arcu, condimentum vel mollis id, luctus non nisl. Phasellus nibh quam, commodo quis convallis et, suscipit eu magna. Vestibulum metus ligula, vulputate ac tincidunt non, mattis eu mi. Donec mollis dictum hendrerit. Quisque vestibulum finibus porttitor. Phasellus bibendum posuere felis, id rhoncus est rhoncus vel. Donec id nulla molestie, auctor quam a, maximus dui. Vivamus ut leo blandit, egestas lorem iaculis, dictum diam.</p>
-        </div>
-      </div>
-
-    </section>
-
-    <section>
-      {% include 'instagram' %}
-    </section>
-  </div>
-
-  <footer>
-    {% include 'footer' %}
-  </footer>
+    <footer>
+      {% include 'footer' %}
+    </footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>

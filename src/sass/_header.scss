@@ -1,7 +1,11 @@
 header {
   width: 100%;
   height: 49vw;
+  font-family: 'AmsiProUltra';
   background-color: white;
+  @media (max-width: 912px) {
+    height: 446px;
+  }
   nav {
     z-index: 1000;
     position:fixed;
@@ -9,9 +13,18 @@ header {
     padding: 0 4% 0 4%;
     height: 66px;
     background-color: white;
-    .top-logo {
-      width: 55px;
+    li {
+      display: inline-block;
+    }
+    a {
+      display:inline-block;
+      text-decoration: none;
+      color: #000;
+    }
+    div.logo {
+      width: 24%;
       height: 55px;
+      display: block;
       float: left;
       margin-top: 7px;
       .logo-st0 {
@@ -21,38 +34,48 @@ header {
         fill:#FFFFFF;
       }
     }
-
-    ul {
+    ul.center-links {
       display: inline-block;
-      width: 100%;
+      width:50%;
+      position: relative;
       text-align: center;
-    }
-    li {
-      display: inline-block;
-      font-family: 'AmsiProUltra';
-      &.store-locator {
-        float: right;
-        padding: 0;
+      font-size: 1.1rem;
+      bottom: -44px;
+      li {
+      padding-right: 12px;
+      padding-left: 12px;
+      }
+      img {
+        width: 6px;
+        margin-left: 2px;
+        vertical-align: middle;
       }
     }
-    a {
-      text-decoration: none;
-      color: #000;
-    }
-    .top-links {
+    aside.right {
+      width:24%;
+      height: 100%;
       position: relative;
-      width: 200px;
-      height: 12px;
-      top: 7px;
-      right: 0px;
-      font-size: 8px;
       float: right;
-      .right-border {
-        padding: 2px 6px 0 6px;
-        // border-right: 2px solid #a4a4a4;
+    }
+    ul.top-links {
+      top: 10px;
+      text-align: right;
+      font-size: 8px;
+      li.non-icon {
+        a {
+          padding: 0px 2px;
+        }
+        span {
+          color: #a4a4a4;
+        }
       }
       li:nth-child(3) {
-        margin-left: 7px;
+        margin-left: 2px;
+      }
+      svg {
+        vertical-align: middle;
+        padding-bottom: 2px;
+        margin: 0;
       }
       a {
         color: black;
@@ -62,34 +85,17 @@ header {
           opacity: 1  ;
         }
       }
-      svg {
-        vertical-align: middle;
-        padding-bottom: 2px;
-        margin: 0;
-      }
-
     }
-    .bottom-links {
+    ul.bottom-links {
+      text-align: right;
       position: relative;
-      font-size: 12px;
-      bottom: 16px;
+      margin-top: 28px;
+      font-size: 1.1rem;
       li {
-      padding-right: 15px;
-      padding-left: 15px;
-      }
-    }
-    .bottom-right-links {
-      width: 155px;
-      float: right;
-      position: relative;
-      bottom: 35px;
-      right: 0px;
-      font-size: 12px;
-      li {
-        padding: 0px 4px 0px 4px;
+        padding: 0px 2px 0px 2px;
         &:nth-child(2) {
           vertical-align: middle;
-          padding-bottom: 4px;
+          padding-bottom: 2px;
         }
       }
     }
@@ -102,10 +108,17 @@ header {
     background-image: url("../img/hero-home.png");
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 912px) {
+      height: 446px;
+      background-position: bottom right;
+    }
     hgroup {
       text-align: center;
       color: white;
       padding: 21.5vw 5vw;
+      h2 {
+        display: none;
+      }
       h5 {
         font-family: "GTPressuraBold";
         padding-bottom: 24px;
@@ -124,21 +137,3 @@ header {
     }
   }
 }
-/*@media only screen and (max-width: 1175px) {
-  header {
-    height: 570px;
-  }
-  div.hero-area {
-    height: 505px;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  header {
-    height: 400px;
-  }
-}
-@media only screen and (max-width: 900px) {
-  header {
-    height: 300px;
-  }
-}*/

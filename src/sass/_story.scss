@@ -1,0 +1,126 @@
+main.story {
+  header {
+    height: 20.5vw;
+    div.hero-area {
+      height: 20.5vw;
+      background-image: url("../img/full-story.png");
+      hgroup {
+        padding: 11vw 5vw;
+        h1 {
+          display: none;
+        }
+        h2.ingredients-heading {
+          display: none;
+        }
+        h5 {
+          display:none;
+        }
+        a {
+          display: none;
+        }
+        h2.story-heading {
+          display: block;
+        }
+      }
+    }
+  }
+}
+main.ingredients {
+  header {
+    height: 20.5vw;
+    div.hero-area {
+      height: 20.5vw;
+      background-image: url("../img/full-story.png");
+      hgroup {
+        padding: 11vw 5vw;
+        h1 {
+          display: none;
+        }
+        h2.story-heading {
+          display: none;
+        }
+        h5 {
+          display:none;
+        }
+        a {
+          display: none;
+        }
+        h2.ingredients-heading {
+          display: block;
+        }
+      }
+    }
+  }
+}
+main.story, main.ingredients {
+  section.about {
+    width: 524px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 34px 0px 0px 0px;
+    @media (max-width: $mobile) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    h3 {
+      font-family: 'AmsiProUltra';
+      text-align: center;
+      color: $logo-green;
+    }
+
+    aside {
+      padding: 46px 0px 23px 0px;
+      div.image {
+        background-image: url("../img/living-better.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 42%;
+        height: 140px;
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
+      }
+      p.logo-text {
+        vertical-align: top;
+        display: inline-block;
+        width: 56%;
+        font-size: 1.4rem;
+        line-height: 1.75;
+        letter-spacing: 0.2px;
+        position: relative;
+        //top: 50%;
+        //transform: translateY(-50%);
+        padding-left: 20px;
+        padding-top: 20px;
+
+        @media (max-width: $mobile) {
+          position: static;
+          transform: none;
+          padding: 20px 0;
+          width: 100%;
+        }
+
+        #better-green {
+          color: $livingBetterGreen;
+        }
+      }
+    }
+    article.about-copy {
+      p {
+        line-height: 1.9;
+        padding-top: 20px;
+      }
+    }
+  }
+  section.instagram {
+    padding-top: 76px;
+    h5 {
+      display: block;
+      padding-bottom: 24px;
+    }
+  }
+  footer {
+    margin-top: 250px !important;
+  }
+}

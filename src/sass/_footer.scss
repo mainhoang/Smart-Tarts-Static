@@ -11,6 +11,8 @@ footer {
   }
   article.footer-top {
     background: $footerDarkGreen;
+    width: 100%;
+    margin: 0 auto;
     ul {
       max-width: 730px;
       margin: 0 auto;
@@ -24,37 +26,27 @@ footer {
       }
       li {
         display: inline-block;
-        width: 24.2%;
-        margin: 20px 0;
-        @media (max-width: 912px) {
-          width: 32.9%;
-        }
+        width: 170px;
+        margin: 20px 2px;
+        
         @media (max-width: $mobile) {
           display: block;
           width: 220px;
           margin: 0 auto;
           padding: 20px 0;
         }
-        h5 {
-          padding-top: 2px;
-          @media (max-width: $mobile) {
-            font-size: 2rem;
-          }
-        }
-        div.icons {
-          float:left;
-          padding-right: 14px;
-          vertical-align: middle;
-        }
-        p {
-          text-decoration: underline;
-        }
         &.newsletter {
+          width: 180px;
+          float: right;
+          @media (max-width: 912px) {
+            float: none;
+            width: 180px;
+          }
           .subscribe {
             font-family: 'GTPressuraLight';
             border-bottom: 1px solid white;
             @media (max-width: 912px) {
-              text-align: center;
+              //text-align: center;
               padding-left: 5%;
               padding-right: 5%;
             }
@@ -72,7 +64,7 @@ footer {
           }
           input[type="text"] {
             width: 100%;
-            background: #4FAB4F;
+            background: $footerDarkGreen;
             font-size: 0.8rem;
             border: 0;
             color: #fff;
@@ -92,12 +84,29 @@ footer {
             }
           }
         }
+        h5 {
+          padding-top: 2px;
+          @media (max-width: $mobile) {
+            font-size: 2rem;
+          }
+        }
+        div.icons {
+          float:left;
+          padding-right: 14px;
+          vertical-align: middle;
+        }
+        p {
+          text-decoration: underline;
+        }
+
+
       }
     }
   }
 
   article.footer-bottom {
-    padding-top: 26px;
+    background: $footerLightGreen;
+    padding: 26px 0px 16px 0px;
     max-width: 730px;
     margin: 0 auto;
     aside.bottom-left {
@@ -106,16 +115,26 @@ footer {
       width: 49%;
       vertical-align: top;
       max-width: 250px;
+      @media (max-width: $mobile) {
+        display: block;
+        text-align: center;
+        margin:auto;
+        padding: 40px 0px;
+      }
       p {
         padding: 8px 0;
         font-size: 1rem;
         line-height: 1.2;
+        @media (max-width: $mobile) {
+          line-height: 1.8;
+        }
       }
       p:last-child {
         padding: 8px 0;
         font-size: 0.8rem;
         @media (max-width: $mobile) {
           text-align: center;
+          padding: 0;
         }
       }
       h6 {
@@ -123,11 +142,8 @@ footer {
         text-transform: uppercase;
         @media (max-width: $mobile) {
           text-align: center;
+          font-size: 2rem;
         }
-      }
-      @media (max-width: $mobile) {
-        padding-left: 5%;
-        padding-right: 5%;
       }
     }
 
@@ -137,12 +153,23 @@ footer {
       width: 49%;
       vertical-align: top;
       float: right;
+      @media (max-width: $mobile) {
+        width: 100%;
+        display: block;
+        float: none;
+      }
       li {
         display: inline-block;
         vertical-align: top;
         text-align: left;
         padding-left: 15px;
         list-style-type: none;
+        @media (max-width: $mobile) {
+          display: inline-block;
+          width: 30%;
+          text-align: center;
+          //padding: 15px 0;
+        }
         h6 {
           padding-bottom: 4px;
         }
@@ -150,15 +177,6 @@ footer {
           font-family: 'GTPressuraLight';
           font-size: 0.8rem;
         }
-        @media (max-width: $mobile) {
-          width: 100%;
-          text-align: center;
-          padding: 0;
-        }
-      }
-      @media (max-width: $mobile) {
-        width: 100%;
-        display: block;
       }
     }
   }
