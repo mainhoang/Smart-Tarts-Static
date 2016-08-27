@@ -1,7 +1,7 @@
 main.story {
   header {
     height: 20.5vw;
-    @media (max-width: 912px) {
+    @media (max-width: $break) {
       height: 446px;
     }
     div.hero-area {
@@ -15,7 +15,7 @@ main.story {
       }
       hgroup {
         padding: 11vw 5vw;
-        @media (max-width: 912px) {
+        @media (max-width: $break) {
           width: 70%;
           left: 15%;
           padding: 220px 5%;
@@ -43,11 +43,24 @@ main.story {
 main.ingredients {
   header {
     height: 20.5vw;
+    @media (max-width: $break) {
+      height: 446px;
+    }
     div.hero-area {
       height: 20.5vw;
       background-image: url("../img/full-story.png");
+      @media (max-width: 912px) {
+        height: 446px;
+        background-position: top left;
+        background-size: cover;
+      }
       hgroup {
         padding: 11vw 5vw;
+        @media (max-width: $break) {
+          width: 70%;
+          left: 15%;
+          padding: 220px 5%;
+        }
         h1 {
           display: none;
         }
@@ -73,7 +86,7 @@ main.story, main.ingredients {
     max-width: 100%;
     margin: 0 auto;
     padding: 34px 0px 0px 0px;
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       padding-left: 5%;
       padding-right: 5%;
     }
@@ -92,7 +105,7 @@ main.story, main.ingredients {
         display: inline-block;
         width: 42%;
         height: 140px;
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
           width: 100%;
 
           height:200px;
@@ -114,7 +127,7 @@ main.story, main.ingredients {
         padding-left: 20px;
         padding-top: 20px;
 
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
           position: static;
           transform: none;
           padding: 20px 40px;

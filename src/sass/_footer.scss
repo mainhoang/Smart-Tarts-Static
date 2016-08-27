@@ -16,7 +16,7 @@ footer {
     ul {
       max-width: 730px;
       margin: 0 auto;
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         padding: 30px 0;
       }
       li {
@@ -24,7 +24,7 @@ footer {
         width: 170px;
         margin: 15px 2px;
 
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
           display: block;
           width: 220px;
           margin: 0 auto;
@@ -34,7 +34,7 @@ footer {
         &.newsletter {
           width: 180px;
           float: right;
-          @media (max-width: $mobile) {
+          @media (max-width: $tablet) {
             float: none;
             width: 280px;
           }
@@ -52,6 +52,9 @@ footer {
               font-size: 1.2rem;
               text-transform: uppercase;
               margin-left: 32px;
+              @media (max-width: $tablet) {
+                margin-left: 135px;
+              }
             }
           }
           input[type="text"] {
@@ -78,7 +81,7 @@ footer {
         }
         h5 {
           padding-top: 2px;
-          @media (max-width: $mobile) {
+          @media (max-width: $tablet) {
             font-size: 2rem;
           }
         }
@@ -86,7 +89,7 @@ footer {
           float:left;
           padding-right: 14px;
           vertical-align: middle;
-          @media (max-width: $mobile) {
+          @media (max-width: $tablet) {
             float:none;;
             padding: 0 0 10px 0;
           }
@@ -94,8 +97,6 @@ footer {
         p {
           text-decoration: underline;
         }
-
-
       }
     }
   }
@@ -111,7 +112,7 @@ footer {
       width: 49%;
       vertical-align: top;
       max-width: 250px;
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         display: block;
         text-align: center;
         margin:auto;
@@ -121,14 +122,14 @@ footer {
         padding: 8px 0;
         font-size: 1rem;
         line-height: 1.2;
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
           line-height: 1.8;
         }
       }
       p:last-child {
         padding: 8px 0;
         font-size: 0.8rem;
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
           text-align: center;
           padding: 0;
         }
@@ -136,7 +137,7 @@ footer {
       h6 {
         font-family: 'AmsiProUltra';
         text-transform: uppercase;
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
           text-align: center;
           font-size: 2rem;
         }
@@ -149,10 +150,12 @@ footer {
       width: 49%;
       vertical-align: top;
       float: right;
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         width: 100%;
         display: block;
         float: none;
+        text-align: center;
+        padding-bottom: 50px;
       }
       li {
         display: inline-block;
@@ -160,18 +163,26 @@ footer {
         text-align: left;
         padding-left: 15px;
         list-style-type: none;
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
           display: inline-block;
-          width: 30%;
+          width: 80%;
           text-align: center;
+          padding: 20px 0;;
+
           //padding: 15px 0;
         }
         h6 {
           padding-bottom: 4px;
+          @media (max-width: $tablet) {
+            font-size: 1.4rem;
+          }
         }
         a {
           font-family: 'GTPressuraLight';
           font-size: 0.8rem;
+          @media (max-width: $tablet) {
+            font-size: 1.0rem;
+          }
         }
       }
     }
