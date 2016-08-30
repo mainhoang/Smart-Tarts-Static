@@ -4,19 +4,28 @@ main.story {
     @media (max-width: $break) {
       height: 188px;
     }
+    @media (max-width: $mobile) {
+      height: 160px;
+    }
     div.hero-area {
       height: 20.5vw;
       background-image: url("../img/full-story.png");
       background-size: cover;
-      @media (max-width: 912px) {
+      @media (max-width: $break) {
         height: 188px;
         background-position: top left;
         background-size: cover;
       }
+      @media (max-width: $mobile) {
+        height: 160px;
+      }
       div.fade {
         height: 20.5vw;
-        @media (max-width: $mobile) {
+        @media (max-width: $break) {
           height: 188px;
+        }
+        @media (max-width: $mobile) {
+          height: 160px;
         }
       }
       hgroup {
@@ -24,6 +33,9 @@ main.story {
         @media (max-width: $break) {
           padding: 110px 0;
           margin: auto;
+        }
+        @media (max-width: $mobile) {
+          padding: 100px 0;
         }
         h1 {
           display: none;
@@ -39,9 +51,6 @@ main.story {
         }
         h2.story-heading {
           display: block;
-          @media (max-width: $break) {
-            font-size: 3.5rem;
-          }
         }
       }
     }
@@ -53,25 +62,37 @@ main.ingredients {
     @media (max-width: $break) {
       height: 188px;
     }
+    @media (max-width: $mobile) {
+      height: 160px;
+    }
     div.hero-area {
       height: 20.5vw;
       background-image: url("../img/full-story.png");
-      @media (max-width: 912px) {
+      @media (max-width: $break) {
         height: 188px;
         background-position: top left;
         background-size: cover;
       }
+      @media (max-width: $mobile) {
+        height: 160px;
+      }
       div.fade {
         height: 20.5vw;
-        @media (max-width: $mobile) {
+        @media (max-width: $break) {
           height: 188px;
+        }
+        @media (max-width: $mobile) {
+          height: 160px;
         }
       }
       hgroup {
         padding: 11vw 5vw;
         @media (max-width: $break) {
-          padding: 110px 0;
+          padding: 100px 0;
           margin: auto;
+        }
+        @media (max-width: $mobile) {
+          padding: 94px 0;
         }
         h1 {
           display: none;
@@ -87,9 +108,6 @@ main.ingredients {
         }
         h2.ingredients-heading {
           display: block;
-          @media (max-width: $break) {
-            font-size: 3.5rem;
-          }
         }
       }
     }
@@ -102,8 +120,8 @@ main.story, main.ingredients {
     margin: 0 auto;
     padding: 34px 0px 0px 0px;
     @media (max-width: $tablet) {
-      padding-left: 5%;
-      padding-right: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
     }
     h3 {
       font-family: 'AmsiProUltra';
@@ -112,7 +130,11 @@ main.story, main.ingredients {
     }
 
     aside {
+      width: 100%;
       padding: 46px 0px 23px 0px;
+      @media (max-width: $mobile) {
+        //padding: 0 0 23px 0;
+      }
       div.image {
         background-image: url("../img/living-better.png");
         background-size: contain;
@@ -122,11 +144,13 @@ main.story, main.ingredients {
         height: 140px;
         @media (max-width: $tablet) {
           width: 100%;
-
           height:200px;
           background-position: center;
           background-size: 70%;
           margin: 0 auto;
+        }
+        @media (max-width: $mobile) {
+          height: 150px;
         }
       }
       p.logo-text {
@@ -149,6 +173,9 @@ main.story, main.ingredients {
           width: 100%;
           text-align: center;
         }
+        @media (max-width: $mobile) {
+          padding: 0 10% 20% 10%;
+        }
 
         #better-green {
           color: $livingBetterGreen;
@@ -159,6 +186,10 @@ main.story, main.ingredients {
       p {
         line-height: 1.9;
         padding-top: 20px;
+        @media (max-width: $mobile) {
+          text-align: justify;
+          padding: 0 7%;
+        }
       }
     }
   }
@@ -167,9 +198,19 @@ main.story, main.ingredients {
     h5 {
       display: block;
       padding-bottom: 24px;
+      @media (max-width: $mobile) {
+        padding-bottom: 0;
+        font-size: 2rem;
+      }
     }
   }
   footer {
-    margin-top: 250px !important;
+    margin-top: 250px;
+    @media (max-width: $tablet) {
+      margin-top: 175px;
+    }
+    @media (max-width: $mobile) {
+      margin-top: 100px;
+    }
   }
 }

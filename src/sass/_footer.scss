@@ -12,95 +12,109 @@ footer {
   article.footer-top {
     background: $footerDarkGreen;
     width: 100%;
-    margin: 0 auto;
-    ul {
-      max-width: 730px;
+    div.top-wrapper {
+      width: 740px;
       margin: 0 auto;
       @media (max-width: $tablet) {
-        padding: 30px 0;
+        width: 400px;
       }
-      li {
+      @media (max-width: $mobile) {
+        width: 100%;
+        padding: 20px 0;
+      }
+      ul {
         display: inline-block;
-        width: 170px;
-        margin: 15px 2px;
-
-        @media (max-width: $tablet) {
+        @media (max-width: $mobile) {
           display: block;
-          width: 220px;
-          margin: 0 auto;
-          padding: 20px 0;
+          width: 50%;
+          left: 25%;
           text-align: center;
-        }
-        &.newsletter {
-          width: 180px;
-          float: right;
-          @media (max-width: $tablet) {
-            float: none;
-            width: 280px;
-          }
-          .subscribe {
-            font-family: 'GTPressuraLight';
-            border-bottom: 1px solid white;
 
-            button {
-              background: transparent;
-              color: white;
-              border: 0;
-              outline: 0;
-              cursor: pointer;
-              font-family: 'AmsiProUltra';
-              font-size: 1.2rem;
-              text-transform: uppercase;
-              margin-left: 32px;
-              @media (max-width: $tablet) {
-                margin-left: 135px;
-              }
+        }
+        li {
+          display: inline-block;
+          width: 180px;
+          margin: 20px 0;
+          @media (max-width: $tablet) {
+            width: 60px;
+          }
+          @media (max-width: $mobile) {
+            width: 30%;
+          }
+          h5 {
+            padding-top: 2px;
+            @media (max-width: $tablet) {
+              display: none;
             }
           }
-          input[type="text"] {
-            width: 100%;
-            background: $footerDarkGreen;
-            font-size: 0.8rem;
+          div.icons {
+
+            float:left;
+            padding-right: 14px;
+            vertical-align: middle;
+            @media (max-width: $tablet) {
+              float: none;
+              padding: 0;
+
+            }
+
+          }
+          p {
+            text-decoration: underline;
+            @media (max-width: $tablet) {
+              display: none;
+            }
+          }
+        }
+      }
+      aside.newsletter {
+        display: inline-block;
+        width: 190px;
+        @media (max-width: $tablet) {
+          padding: 24px 0;
+          margin: 0;
+          vertical-align: top;
+          float:right;
+        }
+        @media (max-width: $mobile) {
+          display: block;
+          float: none;
+          margin: 0 auto;
+        }
+        .subscribe {
+          font-family: 'GTPressuraLight';
+          border-bottom: 1px solid white;
+          button {
+            background: transparent;
+            color: white;
             border: 0;
+            outline: 0;
+            cursor: pointer;
+            font-family: 'AmsiProUltra';
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-left: 45px;
+          }
+        }
+        input[type="text"] {
+          width: 100%;
+          background: $footerDarkGreen;
+          font-size: 0.8rem;
+          border: 0;
+          color: #fff;
+          outline: none;
+          opacity: .4;
+          &::-webkit-input-placeholder {
             color: #fff;
-            outline: none;
-            opacity: .4;
-            &::-webkit-input-placeholder {
-              color: #fff;
-            }
-            &:-moz-placeholder { /* Firefox 18- */
-              color: #fff;
-            }
-            &::-moz-placeholder {  /* Firefox 19+ */
-              color: #fff;
-            }
-            &:-ms-input-placeholder {
-              color: #fff;
-            }
           }
-        }
-        h5 {
-          padding-top: 2px;
-          @media (max-width: $tablet) {
-            font-size: 2rem;
+          &:-moz-placeholder { /* Firefox 18- */
+            color: #fff;
           }
-          @media (max-width: $mobile) {
-            display: none;
+          &::-moz-placeholder {  /* Firefox 19+ */
+            color: #fff;
           }
-        }
-        div.icons {
-          float:left;
-          padding-right: 14px;
-          vertical-align: middle;
-          @media (max-width: $tablet) {
-            float:none;;
-            padding: 0 0 10px 0;
-          }
-        }
-        p {
-          text-decoration: underline;
-          @media (max-width: $mobile) {
-            display: none;
+          &:-ms-input-placeholder {
+            color: #fff;
           }
         }
       }
@@ -108,10 +122,19 @@ footer {
   }
 
   article.footer-bottom {
+    width:100%;
     background: $footerLightGreen;
     padding: 26px 0px 16px 0px;
-    max-width: 730px;
-    margin: 0 auto;
+    @media (max-width: $tablet) {
+      padding: 0;
+    }
+    div.bottom-wrapper {
+      width: 740px;
+      margin: 0 auto;
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
+    }
     aside.bottom-left {
       text-align: left;
       display: inline-block;
@@ -119,10 +142,12 @@ footer {
       vertical-align: top;
       max-width: 250px;
       @media (max-width: $tablet) {
+        width:50%;
+        max-width: 380px;
         display: block;
         text-align: center;
         margin:auto;
-        padding: 40px 0px;
+        padding: 50px 0px;
       }
       p {
         padding: 8px 0;
@@ -157,9 +182,14 @@ footer {
       vertical-align: top;
       float: right;
       @media (max-width: $tablet) {
+        background-color: $footerDarkGreen;
         width: 100%;
         display: block;
         float: none;
+        text-align: center;
+        padding: 50px 0 70px 0;
+      }
+      @media (max-width: $mobile) {
         text-align: center;
         padding-bottom: 50px;
       }
@@ -170,23 +200,25 @@ footer {
         padding-left: 15px;
         list-style-type: none;
         @media (max-width: $tablet) {
+          text-align: center;
+          padding: 0 5%;
+        }
+        @media (max-width: $mobile) {
           display: inline-block;
           width: 80%;
           text-align: center;
-          padding: 20px 0;;
-
-          //padding: 15px 0;
+          padding: 20px 0;
         }
         h6 {
           padding-bottom: 4px;
-          @media (max-width: $tablet) {
+          @media (max-width: $mobile) {
             font-size: 1.4rem;
           }
         }
         a {
           font-family: 'GTPressuraLight';
           font-size: 0.8rem;
-          @media (max-width: $tablet) {
+          @media (max-width: $mobile) {
             font-size: 1.0rem;
           }
         }
