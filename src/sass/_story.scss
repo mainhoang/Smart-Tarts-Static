@@ -195,9 +195,10 @@ main.story, main.ingredients {
   }
   section.instagram {
     padding-top: 76px;
-    h5 {
+    h5:first-child {
       display: block;
       padding-bottom: 24px;
+      text-transform: none;
       @media (max-width: $mobile) {
         padding-bottom: 0;
         font-size: 2rem;
