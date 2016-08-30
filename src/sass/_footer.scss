@@ -2,7 +2,7 @@ footer {
   background: $footerLightGreen;
   width: 100%;
   color: white;
-  margin-top: 70px !important;
+  margin-top: 70px;
   h5, h6 {
     text-transform: uppercase;
   }
@@ -84,6 +84,9 @@ footer {
           @media (max-width: $tablet) {
             font-size: 2rem;
           }
+          @media (max-width: $mobile) {
+            display: none;
+          }
         }
         div.icons {
           float:left;
@@ -96,6 +99,9 @@ footer {
         }
         p {
           text-decoration: underline;
+          @media (max-width: $mobile) {
+            display: none;
+          }
         }
       }
     }

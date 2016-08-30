@@ -2,23 +2,28 @@ main.story {
   header {
     height: 20.5vw;
     @media (max-width: $break) {
-      height: 446px;
+      height: 188px;
     }
     div.hero-area {
       height: 20.5vw;
       background-image: url("../img/full-story.png");
       background-size: cover;
       @media (max-width: 912px) {
-        height: 446px;
+        height: 188px;
         background-position: top left;
         background-size: cover;
+      }
+      div.fade {
+        height: 20.5vw;
+        @media (max-width: $mobile) {
+          height: 188px;
+        }
       }
       hgroup {
         padding: 11vw 5vw;
         @media (max-width: $break) {
-          width: 70%;
-          left: 15%;
-          padding: 220px 5%;
+          padding: 110px 0;
+          margin: auto;
         }
         h1 {
           display: none;
@@ -34,7 +39,9 @@ main.story {
         }
         h2.story-heading {
           display: block;
-          font-size: 7rem;
+          @media (max-width: $break) {
+            font-size: 3.5rem;
+          }
         }
       }
     }
@@ -44,22 +51,27 @@ main.ingredients {
   header {
     height: 20.5vw;
     @media (max-width: $break) {
-      height: 446px;
+      height: 188px;
     }
     div.hero-area {
       height: 20.5vw;
       background-image: url("../img/full-story.png");
       @media (max-width: 912px) {
-        height: 446px;
+        height: 188px;
         background-position: top left;
         background-size: cover;
+      }
+      div.fade {
+        height: 20.5vw;
+        @media (max-width: $mobile) {
+          height: 188px;
+        }
       }
       hgroup {
         padding: 11vw 5vw;
         @media (max-width: $break) {
-          width: 70%;
-          left: 15%;
-          padding: 220px 5%;
+          padding: 110px 0;
+          margin: auto;
         }
         h1 {
           display: none;
@@ -75,6 +87,9 @@ main.ingredients {
         }
         h2.ingredients-heading {
           display: block;
+          @media (max-width: $break) {
+            font-size: 3.5rem;
+          }
         }
       }
     }

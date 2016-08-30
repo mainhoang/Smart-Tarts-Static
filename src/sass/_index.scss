@@ -23,7 +23,7 @@ ul.products {
   @media (max-width: $tablet) {
     overflow: auto;
     white-space: nowrap;
-    padding: 40px 0px 25px 0px;
+    padding: 40px 0px 30px 0px;
     background-color: $bg-gray;
   }
   li {
@@ -85,20 +85,25 @@ section.instagram {
     width: 750px;
     max-width: 100%;
     margin: 26px auto 0px auto;
+    @media (max-width: $tablet) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    @media (max-width: $mobile) {
+      margin: 0 auto;
+      padding: 0;
+    }
     h5 {
       font-family: 'GTPressuraBold';
       text-align: center;
       display:none;
     }
-    @media (max-width: $tablet) {
-      padding-left: 5%;
-      padding-right: 5%;
-    }
-
     ul {
       text-align: center;
-      @media (max-width: $tablet) {
-        padding: 0 5%;
+
+      @media (max-width: $mobile) {
+        overflow: auto;
+        white-space: nowrap;
       }
       li {
         display: inline-block;
@@ -121,12 +126,17 @@ section.instagram {
           background-image: url(../img/image4.png);
         }
         @media (max-width: $tablet) {
-          width: 230px;
-          margin: 3%;
-          height: 230px;
+          width: 40vw;
+          margin: 2%;
+          height: 40vw;
         }
         @media (max-width: $mobile) {
-          width: 90%;
+          position:relative;
+          width: 100%;
+          height: 90vw;
+          margin: 0 auto;
+          background-size: 70%;
+          background-position: center;
         }
       }
     }
