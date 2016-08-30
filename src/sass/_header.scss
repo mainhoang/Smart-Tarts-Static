@@ -208,6 +208,9 @@ header {
       opacity: 0;
       -webkit-transition: background 2s linear;
       transition: opacity 2s linear;
+      @media (max-width: $tablet) {
+        opacity: 0.075;
+      }
       @media (max-width: $mobile) {
         display: block;
         opacity: 0.25;
@@ -217,23 +220,21 @@ header {
       text-align: center;
       color: white;
       padding: 21.5vw 5vw;
+      .prod-index-heading {
+        display: none;
+      }
       @media (max-width: $tablet) {
-        padding: 30vw 5vw;
-        h1 {
-          font-size: 7rem;
-        }
+        padding: 26vw 5vw;
       }
       @media (max-width: $mobile) {
         padding: 40vw 5vw;
-        h1 {
-          font-size: 6rem;
-        }
       }
       h2 {
         display: none;
       }
       h5 {
         font-family: "GTPressuraBold";
+        text-transform: none;
         padding-bottom: 24px;
         letter-spacing: 0.5px;
       }

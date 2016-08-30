@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gulper</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <main class="product-index">
+
+      <header>
+        {% include 'header' %}
+      </header>
+
+      <div class="content-container">
+        <section>
+          <ul class="products">
+            <li><a href="product-detail.html">
+              <img src="../img/product1.png"/>
+              <h5>Dutch Apple Smart Tart&trade;</h5>
+              <p>$5.97 / Box</p>
+            </a></li>
+            <li><a href="product-detail.html">
+              <img src="../img/product2.png"/>
+              <h5>Strawberry Smart Tart&trade;</h5>
+              <p>$5.97 / Box</p>
+            </a></li>
+            <li><a href="product-detail.html">
+              <img src="../img/product3.png"/>
+              <h5>Blueberry Smart Tart&trade;</h5>
+              <p>$5.97 / Box</p>
+            </a></li>
+          </ul>
+          <div class="save">
+            <h6>When you subscribe you save!</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+            <button>Learn More</button>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+          {% include 'footer' %}
+        </footer>
+
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

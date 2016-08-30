@@ -40,16 +40,20 @@ ul.products {
       width: 100%;
       margin: 0 auto;
     }
-
-
-  }
-  img {
-    width: 100%;
-    @media (max-width: $tablet) {
-      width: 300px;
+    a {
+      color: black;
     }
-    @media (max-width: $mobile) {
-      width: 60%;
+    h5 {
+      padding-top: 8px;
+    }
+    img {
+      width: 100%;
+      @media (max-width: $tablet) {
+        width: 300px;
+      }
+      @media (max-width: $mobile) {
+        width: 60%;
+      }
     }
   }
 }
