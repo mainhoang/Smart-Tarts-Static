@@ -9,6 +9,11 @@ header {
   @media (max-width: $mobile) {
     height: 446px;
   }
+  a {
+    display:inline-block;
+    text-decoration: none;
+    color: #000;
+  }
   nav {
     z-index: 1000;
     position:fixed;
@@ -18,11 +23,6 @@ header {
     background-color: white;
     li {
       display: inline-block;
-    }
-    a {
-      display:inline-block;
-      text-decoration: none;
-      color: #000;
     }
     div.logo {
       width: 24%;
@@ -248,6 +248,28 @@ header {
         background-color: $logo-green;
         border: 2px solid white;
       }
+    }
+  }
+  div.dropin {
+    position: fixed;
+    top:-200%;
+    left:0;
+    z-index: 90;
+    height: 100%;
+    width:100%;
+    background-color: white;
+    padding-top: 65px;
+    transition: all 500ms ease-in;
+    text-align: center;
+    &.animate-menu {
+      top:66px;
+    }
+    li {
+      display: block;
+      margin: 40px auto;
+    }
+    .dropin-link {
+      font-size: 32px;
     }
   }
 }

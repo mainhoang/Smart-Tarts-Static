@@ -184,7 +184,6 @@ main.story, main.ingredients {
     }
     article.about-copy {
       p {
-        line-height: 1.9;
         padding-top: 20px;
         @media (max-width: $mobile) {
           text-align: justify;
