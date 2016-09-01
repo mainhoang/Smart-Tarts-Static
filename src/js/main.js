@@ -11,12 +11,18 @@
   var burger = document.querySelector('.hamburger-menu')
   var bar = document.querySelector('.bar')
   var logo = document.querySelector('.logo')
-  var dropin = document.querySelector('.dropin')
+  var dropin = document.querySelector('.drop-in')
+  var cart = document.querySelector(".cart")
+  var basket =document.querySelector(".cart-wrapper")
+
 
   burger.addEventListener('click', function () {
     bar.classList.toggle('animate')
     dropin.classList.toggle('animate-menu')
-    logo.classList.toggle('hide-menu-item')
+  })
+
+  cart.addEventListener('click', function () {
+    basket.classList.toggle('animate-menu')
   })
 
 })();
