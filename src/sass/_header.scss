@@ -50,6 +50,10 @@ header {
       @media (max-width: $tablet) {
         display: none;
       }
+      &.animate-menu {
+        display: none;
+        opacity: 0;
+      }
       li {
       padding-right: 9px;
       padding-left: 9px;
@@ -175,7 +179,6 @@ header {
           display: none;
         }
         &:nth-child(2) {
-
           vertical-align: middle;
           padding-bottom: 2px;
         }
@@ -204,8 +207,7 @@ header {
       height: 446px;
       background-color: black;
       opacity: 0;
-      -webkit-transition: background 2s linear;
-      transition: opacity 2s linear;
+      transition: opacity 600ms ;
       @media (max-width: $tablet) {
         opacity: 0.075;
       }
@@ -249,24 +251,35 @@ header {
     }
   }
   div.drop-in {
+    display: block;
+    overflow-y: scroll;
     position: fixed;
-    top:-200%;
-    left:0;
+    top: -200%;
+    left: 0;
     z-index: 90;
     height: 100%;
     width:100%;
+    padding-bottom: 100px;
     background-color: white;
-    padding-top: 65px;
     transition: all 600ms ease-in;
     text-align: center;
     &.animate-menu {
       top:66px;
     }
+    @media (min-width: $tablet) {
+      display:none;
+
+    }
     li {
       display: block;
-      margin: 40px auto;
-      a {
-        font-size: 2rem;
+      margin: 30px auto;
+      font-size: 2rem;
+      &.burger-cart {
+        display: block;
+      }
+      @media (max-width: $mobile) {
+        margin: 28px auto;
+        font-size: 1.8rem;
       }
     }
   }
@@ -277,9 +290,14 @@ header {
     right: -200%;
     width: 274px;
     height: 100%;
-    //overflow-y: scroll;
     background-color: white;
-    transition: right 1s ease-in;
+    transition: right 800ms ease-in;
+    &.slide {
+      right: 0;
+      @media (max-width: $mobile) {
+        width: 100%;
+      }
+    }
     button {
       display: inline-block;
       width: 10px;
@@ -287,8 +305,6 @@ header {
       box-shadow: none;
       cursor: pointer;
       background-color: transparent;
-
-
     }
     div.basket-header {
       width: 100%;
@@ -380,7 +396,7 @@ header {
     overflow: hidden;
     width: 0;
     height: 0;
-    background-color: #000;
+    background-color: black;
     opacity: 0;
     transition: opacity 600ms;
   }

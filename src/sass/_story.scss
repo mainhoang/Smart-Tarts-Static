@@ -9,12 +9,9 @@ main.story {
     }
     div.hero-area {
       height: 20.5vw;
-      background-image: url("../img/full-story.png");
-      background-size: cover;
+      background-image: url("../img/sub-hero.png");
       @media (max-width: $break) {
         height: 188px;
-        background-position: top left;
-        background-size: cover;
       }
       @media (max-width: $mobile) {
         height: 160px;
@@ -67,11 +64,9 @@ main.ingredients {
     }
     div.hero-area {
       height: 20.5vw;
-      background-image: url("../img/full-story.png");
+      background-image: url("../img/sub-hero.png");
       @media (max-width: $break) {
         height: 188px;
-        background-position: top left;
-        background-size: cover;
       }
       @media (max-width: $mobile) {
         height: 160px;
@@ -88,11 +83,11 @@ main.ingredients {
       hgroup {
         padding: 11vw 5vw;
         @media (max-width: $break) {
-          padding: 100px 0;
+          padding: 110px 0;
           margin: auto;
         }
         @media (max-width: $mobile) {
-          padding: 94px 0;
+          padding: 100px 0;
         }
         h1 {
           display: none;

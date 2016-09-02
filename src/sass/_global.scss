@@ -16,8 +16,8 @@ html, body {
   font-size: 10px;
   width: 100%;
   //background-image: url(../img/cart.png);
-  background-size: 100%;
-  height: auto;
+  //background-size: 100%;
+  //height: auto;
 }
 body {
   opacity:0;
@@ -44,7 +44,7 @@ h2 {
     font-size: 4rem;
   }
   @media (max-width: $mobile) {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 h3 {

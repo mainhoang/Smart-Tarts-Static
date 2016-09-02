@@ -28,11 +28,11 @@ main.product-index {
       hgroup {
         padding: 11vw 5vw;
         @media (max-width: $break) {
-          padding: 110px 0;
+          padding: 104px 0;
           margin: auto;
         }
         @media (max-width: $mobile) {
-          padding: 100px 0;
+          padding: 94px 0;
         }
         h1, h2.ingredients-heading, h2.story-heading, h5, a{
           display: none;
