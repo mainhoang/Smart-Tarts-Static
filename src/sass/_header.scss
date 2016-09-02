@@ -175,6 +175,7 @@ header {
           display: none;
         }
         &:nth-child(2) {
+
           vertical-align: middle;
           padding-bottom: 2px;
         }
@@ -273,22 +274,21 @@ header {
     z-index: 1500;
     position: fixed;
     top: 0;
-    right: 0;
-    //transform: translateX(100%);
+    right: -200%;
     width: 274px;
     height: 100%;
-    overflow-y: scroll;
+    //overflow-y: scroll;
     background-color: white;
-    transition: transform 300ms;
-    @media (max-width: $mobile) {
-      //transform: translateX(0px);
-    }
+    transition: right 1s ease-in;
     button {
       display: inline-block;
       width: 10px;
       border: none;
+      box-shadow: none;
       cursor: pointer;
       background-color: transparent;
+
+
     }
     div.basket-header {
       width: 100%;
@@ -372,12 +372,9 @@ header {
       }
     }
   }
-  .cart-wrapper.is-active {
-    //transform: translateX(0);
-  }
-  .mask {
+  .no-mask {
     position: fixed;
-    z-index: 1400;
+    z-index: 1100;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -385,12 +382,14 @@ header {
     height: 0;
     background-color: #000;
     opacity: 0;
-    transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+    transition: opacity 600ms;
   }
-  .mask.is-active {
+  .mask {
+    position: fixed;
+    z-index: 1100;
     width: 100%;
     height: 100%;
     opacity: 0.7;
-    transition: opacity 0.3s;
+    transition: opacity 600ms;
   }
 }

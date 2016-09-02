@@ -11,9 +11,12 @@
   var burger = document.querySelector('.hamburger-menu')
   var bar = document.querySelector('.bar')
   var logo = document.querySelector('.logo')
+  var centerLinks = document.querySelector(".center-links")
   var dropin = document.querySelector('.drop-in')
   var cart = document.querySelector(".cart")
-  var basket =document.querySelector(".cart-wrapper")
+  var basket = document.querySelector(".basket")
+  var basketX = document.querySelector(".close-basket")
+  var notMasked = document.querySelector(".no-mask")
 
 
   burger.addEventListener('click', function () {
@@ -22,7 +25,17 @@
   })
 
   cart.addEventListener('click', function () {
-    basket.classList.toggle('animate-menu')
+    basket.style.right = "0";
+    logo.style.opacity = "0";
+    centerLinks.style.opacity = "0";
+    notMasked.classList.add("mask");
+  })
+
+  basketX.addEventListener('click', function () {
+    basket.style.right = "-100%";
+    logo.style.opacity = "1";
+    centerLinks.style.opacity = "1";
+    notMasked.classList.remove("mask");
   })
 
 })();
