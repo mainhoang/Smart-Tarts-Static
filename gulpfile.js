@@ -36,6 +36,6 @@ gulp.task('sass', function() {
 })
 
 gulp.task('default', ['serve'])
-
+gulp.task('build', ['sass', 'move', 'liquify'])
 // example task construction
 // gulp.task('{command line command}', ['{task that will run}'])
