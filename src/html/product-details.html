@@ -48,7 +48,7 @@
               <a href="#">View Full Nutrition</a>
             </article>
             <aside class="top-right">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" id="all-natural" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	              viewBox="0 0 40.7 9.2" style="enable-background:new 0 0 40.7 9.2;" xml:space="preserve">
                 <style type="text/css">.an-st0{fill:#60AA45;}.an-st1{fill:#F4F4ED;}</style>
 				        <path class="an-st0" d="M38.5,9C26.5,7,14.2,7,2.1,9c-0.2,0-0.4,0.1-0.5,0.1c-0.1,0-0.2,0-0.3-0.1C1.2,8.9,1.2,8.8,1.1,8.6
@@ -116,8 +116,16 @@
               <h3>Blueberry Smart Tart</h3>
               <p>We go the extra mile to make sure our products are high in protein, potassium, and vitamins while being low in calories, sugar, sodium, and fat.</p>
               <form>
-                <input type="checkbox">One time order<br>
-                <input type="checkbox">Subscribe & <span>Save 15%</span><br>
+                <div>
+                  <input id="one-time" class="check" type="checkbox">
+                  <label for="one-time" class="checkbox-label top">One time order<span class="one-time-quantity">box of tarts</span></label>
+                  <span class="one-time-price">$5.79</span>
+                </div>
+                <div>
+                  <input id="subscribe-save" class="check" type="checkbox" checked>
+                  <label for="subscribe-save" class="checkbox-label">Subscribe & <span class="save-15">Save 15%</span></label>
+                  <span class="subscribe-price">$5.00<span>
+                </div>
                 <input type="submit" value="Add to Cart">
               </form>
             </aside>

@@ -32,13 +32,21 @@ main.product-details {
         background-image: url("../img/product3.png");
         background-repeat: no-repeat;
         background-size: contain;
+        background-position: center;
+        margin: auto;
         width: 100%;
         height: 23.5vw;
       }
       ul {
-      padding-top: 0;
+        padding-top: 0;
+        @media (max-width: $tablet) {
+          width: 80%;
+        }
         li {
           padding: 0 11px;
+          @media (max-width: $tablet) {
+            padding: 0 8px;
+          }
         }
       }
       a {
@@ -57,17 +65,71 @@ main.product-details {
       h3 {
         font-size: 3.5rem;
       }
-      input[type=submit] {
-        background-color: $checkout-green;
-        border: none;
+      form {
         font-family: 'GTPressuraRegular';
-        font-size: 1.4rem;
-        color: white;
-        width: 94%;
-        padding: 12px 30px 10px 30px;
-        text-decoration: none;
-        margin: 26px auto;
-        cursor: pointer;
+        input[type=checkbox] {
+          opacity: 0;
+          position: absolute;
+          display: inline-block;
+          margin: 5px;
+          cursor: pointer;
+          vertical-align: bottom;
+        }
+        label.checkbox-label {
+          width: 70%;
+          display: inline-block;
+          margin: 5px;
+          cursor: pointer;
+          vertical-align: bottom;
+          .save-15 {
+            color: $red;
+          }
+          .one-time-quantity {
+            float: right;
+            color: $gray;
+            text-transform: uppercase;
+          }
+        }
+        .subscribe-price {
+          float: right;
+          display: inline-block;
+          vertical-align: bottom;
+        }
+        .one-time-price {
+          display: inline-block;
+          float: right;
+          font-family: 'GTPressuraBold';
+          font-size: 2rem;
+          vertical-align: bottom;
+        }
+        .check + .checkbox-label:before {
+          content: '';
+          background: white;
+          border: 1px solid black;
+          display: inline-block;
+          vertical-align: bottom;
+          width: 5px;
+          height: 5px;
+          padding: 2px;
+          margin-right: 10px;
+          text-align: center;
+        }
+        .check:checked + .checkbox-label:before {
+          background-image: url("../img/close-icon.svg");
+          color: black;
+        }
+        input[type=submit] {
+          background-color: $checkout-green;
+          border: none;
+          font-family: 'GTPressuraRegular';
+          font-size: 1.4rem;
+          color: white;
+          width: 94%;
+          padding: 12px 30px 10px 30px;
+          text-decoration: none;
+          margin: 26px auto;
+          cursor: pointer;
+        }
       }
     }
   }
