@@ -1,24 +1,26 @@
 main.product-details {
   aside.top-right, aside.bottom-right {
-    width: 262px;
-    max-width: 100%;
+    max-width: 262px;
+    width: 35%;
     display: inline-block;
     vertical-align: top;
     margin-left: 6%;
     @media (max-width: $mobile) {
       display: block;
       width: 100%;
+      max-width: 100%;
       margin: 0;
     }
   }
   article.top-left, article.bottom-left {
-    width: 408px;
-    max-width: 100%;
+    max-width: 408px;
+    width: 55%;
     display: inline-block;
     vertical-align: top;
     @media (max-width: $mobile) {
       display: block;
       width: 100%;
+      max-width: 100%;
     }
   }
   header {
@@ -63,6 +65,7 @@ main.product-details {
         h3 {
           display: block;
           font-size: 3rem;
+          padding-bottom: 18%;
         }
       }
       div.prod-img {
@@ -75,18 +78,14 @@ main.product-details {
         height: 282px;
         max-height: 100%;
         @media (max-width: $mobile) {
-          width: 50%;
+          width: 100%;
           min-width: 225px;
-          height: 64vw;
-          min-height: 250px
+          height: 44vw;
+          min-height: 140px
         }
       }
       ul {
         padding-top: 0;
-        column-count: 3;
-        @media (max-width: $tablet) {
-          width: 80%;
-        }
         @media (max-width: $mobile) {
           display: none;
         }
