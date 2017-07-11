@@ -48,6 +48,3 @@ $ gulp
 the default gulp task is BrowserSync + Sass + Liquid + Move Assets while watching on the entire project directory.
 
 edit the files in the `./src` directory & they will output to the `./dist` directory the dev-server listens @ `localhost:1337`. All added assets and work should take place in the src directory.
-
-
-Layout previews will be available @ http://yourproject.prvw.space server is daemonized w/foreverJS pending DNS & server set-up.
