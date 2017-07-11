@@ -3,7 +3,7 @@
 Website for client, Smart Tarts. 
 
 ### Technologies Used
-* HTMl
+* HTML
 * SASS/SCSS
 * JavaScript
 * Node.js
