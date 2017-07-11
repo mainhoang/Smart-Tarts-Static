@@ -1,4 +1,13 @@
-### Static Shopify Starter
+# Smart-Tarts
+
+Website for client, Smart Tarts. 
+
+### Technologies Used
+* HTMl
+* SASS/SCSS
+* JavaScript
+* Node.js
+* Gulp/Liquid
 
 Sass / Liquid / JS / Assets are either copied or compiled from `./src` to `./dist` directory.
 
